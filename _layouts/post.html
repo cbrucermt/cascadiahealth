@@ -19,57 +19,34 @@ layout: blog
         </div>
     </div>
 </header>
+
 <hr>
+
 <!-- Post Content -->
 <article>
-    <div id="post" class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		{% if site.data-ad-client %}  
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- jekynewage google ads -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9204963049240271"
-                    data-ad-slot="2973388149"
-                    data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-		{% endif %}
-		<hr>
+  <div id="post" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 				{{ content }}
 
-                <hr>
-		    
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- jekynewage google ads -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9204963049240271"
-                    data-ad-slot="2973388149"
-                    data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+        <hr>
 
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
+        <ul class="pager">
+            {% if page.previous.url %}
+            <li class="previous">
+                <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+            </li>
+            {% endif %}
+            {% if page.next.url %}
+            <li class="next">
+                <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+            </li>
+            {% endif %}
+        </ul>
+      </div>
     </div>
+  </div>
 </article>
 
 <hr>
@@ -93,10 +70,10 @@ layout: blog
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
       /*
       var disqus_config = function () {
-      this.page.url = {{ post.url | prepend: site.baseurl }};  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = {{ post.title | prepend: site.baseurl }};; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
+        this.page.url = {{ post.url | prepend: site.baseurl }};  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = {{ post.title | prepend: site.baseurl }};; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
 
       (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
