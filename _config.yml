@@ -1,30 +1,33 @@
-# Site settings
-timezone: America/Los_Angeles
+---
 title: Cascadia Massage and Health Centre
-email:
-description:
-baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "http://cascadiahealth.ca/" # the base hostname & protocol for your site
-
-#Google Ad Words Data from scripts code (using Google responsive options) and ad client
-data-ad-slot:
-data-ad-client:
-google_ad_client:
-
-google_analytics:
-addthis_id:
-disqus_account:
-
-# See all available icons at fontawesome.io
-social:
-  #- title: twitter
-  #  url:
-  #- title: facebook
-  #  url:
-
-# Build settings
-exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
-gems: [jekyll-paginate, jekyll-feed]
+timezone: America/Los_Angeles
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: 
+description: 
+baseurl: ''
+url: http://cascadiahealth.ca/
+data-ad-slot: 
+data-ad-client: 
+google_ad_client: 
+google_analytics: 
+addthis_id: 
+disqus_account: 
+social: 
+exclude:
+- less
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md
+gems:
+- jekyll-paginate
+- jekyll-feed
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
