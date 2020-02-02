@@ -1,3 +1,7 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
 @charset "utf-8";
 
 // Example Defaults
@@ -39,6 +43,6 @@ $theme-dark: #222;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "mixins",
-        "base"
+  "mixins",
+  "base"
 ;

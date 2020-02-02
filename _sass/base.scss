@@ -129,25 +129,6 @@ p {
         color: white;
       }
     }
-    &.affix {
-      background-color: white;
-      border-color: rgba(34, 34, 34, 0.1);
-      .navbar-header .navbar-brand {
-        color: #222222;
-        &:hover, &:focus {
-          color: $theme-primary;
-        }
-      }
-      .nav > li > a {
-        color: #222222;
-        &:focus {
-          color: #222222;
-        }
-        &:hover, &:focus:hover {
-          color: $theme-primary;
-        }
-      }
-    }
   }
 }
 
