@@ -12,12 +12,6 @@ email:
 description: 
 baseurl: ''
 url: http://cascadiahealth.ca/
-data-ad-slot: 
-data-ad-client: 
-google_ad_client: 
-google_analytics: 
-addthis_id: 
-disqus_account: 
 social: 
 exclude:
 - less
@@ -25,9 +19,7 @@ exclude:
 - Gruntfile.js
 - package.json
 - README.md
-gems:
-- jekyll-paginate
-- jekyll-feed
+plugins:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
