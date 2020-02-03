@@ -1,0 +1,34 @@
+---
+layout: main
+---
+
+<section class="physio mb-5">
+  <div class="container text-center mb-4">
+    <h2>Physiotherapy</h2>
+    <hr />
+    <p></p>
+  </div>
+
+  <div class="container mb-4">
+    <h3 class="mb-4">Therapists</h3>
+
+    <ul class="list-unstyled">
+      <li class="media">
+        <img src="/img/profile-sheila.jpg" class="pr-4" style="max-width: 15rem;"/>
+        <div class="media-body">
+          <h4 class="media-heading">Sheila Lukasiewich</h4>
+          {% include bio/sheila.html %}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container mb-4">
+    <h3 class="mb-4">Costs</h3>
+    {% include costs/physio.html %}
+  </div>
+</section>
+
+<section class="mb5">
+  {% include contact.html %}
+</section>
