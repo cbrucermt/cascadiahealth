@@ -1,6 +1,10 @@
 ---
-title: Cascadia Massage and Health Centre
 timezone: America/Los_Angeles
+
+author: Cascadia Massage and Health Centre
+title: Cascadia Massage and Health Centre
+description:
+
 collections:
   posts:
     title: Posts
@@ -8,10 +12,11 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: 
-description: 
+
 baseurl: ''
 url: http://cascadiahealth.ca/
+sass:
+  style: compressed
 social: 
 exclude:
 - less
@@ -19,7 +24,6 @@ exclude:
 - Gruntfile.js
 - package.json
 - README.md
-plugins:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
