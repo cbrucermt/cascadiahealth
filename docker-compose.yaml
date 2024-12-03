@@ -1,7 +1,6 @@
-version: "2"
 services:
   jekyll:
-    image: "jekyll/jekyll:4"
+    image: "jekyll/jekyll:4.2.0"
     volumes:
       - ./:/srv/jekyll
     working_dir: /srv/jekyll
